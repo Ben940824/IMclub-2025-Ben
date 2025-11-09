@@ -1,0 +1,157 @@
+/* @theme imcamp */
+
+/* custom-theme.css */
+@import 'default';
+
+/* 自訂背景顏色和字型顏色 */
+section {
+  background-color: #a8bab7; /* 淺灰綠背景 */
+  background-image: url('./bg.jpg');
+  background-size: cover; /* 確保圖片填滿頁面 */
+  background-position: center; /* 置中圖片 */
+  background-repeat: no-repeat; /* 防止重複 */
+  color: #323440; /* 深藍字型 */
+  display: flex; /* 使用 Flexbox 排版 */
+  flex-direction: column; /* 主軸為垂直方向 */
+  justify-content: flex-start; /* 垂直靠上對齊 */
+  padding: 100px;
+  padding-right: 140px;
+  position: static;  /* 恢復預設定位 */
+  font-family: 'Heiti TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* 設定標題樣式 */
+h1 { /* 封面完全置中標題*/
+  font-size: 2.6em;
+  color: #ac4a39; /* 深紅標題 */
+  font-family: 'Songti TC', 'SimSun', serif;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+h4 { /* 封面完全置中副標*/
+  font-size: 1.2em;
+  color: #5b1c11; /* 深紅標題 */
+  text-align: center;
+  width: 100%;
+  font-family: 'Songti TC', 'SimSun', serif;
+  font-weight: 700;
+  margin-top: 0em;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ac4a39; /* 深紅標題 */
+  text-align: left; /* 標題靠左對齊 */
+  font-family: 'Songti TC', 'SimSun', serif;
+  margin-bottom: 0.3em; /* 少下方間距 */
+  font-weight: 700;  /* 比 h1 稍微細一點 */
+}
+
+h3 {
+  font-size: 1.4em;
+  color: #ac4a39; /* 深紅標題 */
+  text-align: left; /* 標題靠左對齊 */
+  font-family: 'Songti TC', 'SimSun', serif;
+  margin-top: 0em; /* 少上方間距 */
+  margin-bottom: 0.4em; /* 減少下方間距 */
+  font-weight: 700;
+}
+
+/* 設定段落文字樣式 */
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* set header style */
+header {
+  color: #e2e4f2;
+  font-size: 1em;
+  display: flex; /* 使用 Flexbox 排版 */
+  justify-content: space-between; /* 兩側對齊 */
+  padding: 30px;
+  position: fixed; /* 固定定位 */
+  top: 0; /* 與上方對齊 */
+  width: 100%; /* 寬度 100% */
+}
+
+/* 頁碼樣式 */
+.pagination {
+  color: #e2e4f2;
+  display: flex; /* 使用 Flexbox 排版 */
+  list-style: none; /* 移除預設樣式 */
+  padding: 30px; /* 移除內距 */
+}
+
+li {
+    font-family: 'Arial', sans-serif; /* 字型 */
+    font-size: 1.2em; /* 字體大小 */
+    color: #323440; /* 字體顏色 */
+    line-height: 1.8; /* 行高 */
+  }
+
+  pre {
+    background-color: #f1dacf;
+    color: #ac4a39; /* Default text color */
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 8px;
+    overflow-x: auto; /* Enable horizontal scrolling for long code */
+    font-family: 'Fira Code', monospace; /* Use a programming font */
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  /* Style specifically for JavaScript code blocks */
+  
+  pre.language-javascript .keyword {
+    color: #42513a; /* Purple for keywords like "function", "return" */
+    font-weight: bold;
+  }
+  
+  pre.language-javascript .string {
+    color: #263268; /* Green for strings */
+  }
+  
+  pre.language-javascript .comment {
+    color: #5c6370; /* Gray for comments */
+    font-style: italic;
+  }
+  
+  pre.language-javascript .number {
+    color: #caa424; /* Orange for numbers */
+  }
+
+body {
+  background-image: url('./bg.jpg');  /* 調整路徑 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* 固定背景，不隨滾動 */
+  min-height: 100vh;  /* 確保至少有整個視窗高度 */
+  margin: 0;  /* 移除預設邊距 */
+}
+
+
+/* 左右雙欄佈局 */
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns > div {
+  width: 48%;
+}
+
+/* 特定字體樣式 */
+courier {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #cbc7c7 ; /* 淺灰 */
+  padding: 2px 4px; /* 添加一些內距 */
+  border-radius: 4px; /* 添加圓角 */
+} 
